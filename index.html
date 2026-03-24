@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aaron's Travel Photography</title>
+    <link rel="icon" type="image/x-icon" href="Photos/globe-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    
+    <header class="header">
+        <h1 class="header-text">Aaron's Travel Photography</h1>
+    </header>
+
+    <nav class="sidebar">
+        <p>
+            <a href="index.html" class="italicize">Home</a><br><br>
+            <a href="page2.html" class="italicize">Europe 2023</a><br><br>
+            <a href="page3.html" class="italicize">Vancouver Island 2025</a>
+        </p>
+        <button id="colour-scheme-1" class="button-colour">Colour Scheme 1</button>
+        <button id="colour-scheme-2" class="button-colour">Colour Scheme 2</button>
+        <button id="colour-scheme-3" class="button-colour">Colour Scheme 3</button>
+    </nav>
+
+    <main class="main">
+
+        <div class="image-container">
+            <img src="Photos/world-map.png" id="world-map">
+            <img src="Photos/europe-map.png" id="zoom" class="hidden">
+        </div>
+
+        <div class="button-container">
+            <button id="reveal-europe">Zoom Europe</button>
+            <button id="reveal-vancouver-island">Zoom Vancouver Island</button>
+            <button id="reset-button">Reset</button>
+        </div>
+
+        <section>
+            <p>These are the places I have been so far.</p>
+            <ul>
+                <li>Europe 2023
+                    <ul>
+                        <li><a href="Assignment1-Page2.html#nuremburg-castle"><span class="highlight">Nuremburg Castle</span></a></li>
+                        <li><a href="Assignment1-Page2.html#city-of-mostar"><span class="highlight">Mostar, BA</span></a></li>
+                        <li><a href="Assignment1-Page2.html#slap-savica"><span class="highlight">Savica Waterfall</span></a></li>
+                    </ul><br>
+                </li>
+                
+                <li>Vancouver Island 2025
+                    <ul>
+                        <li><a href="Assignment1-Page3.html#WW2-plane"><span class="highlight">WW2 Bomber Plane</span></a></li>
+                        <li><a href="Assignment1-Page3.html#legislative-assembly-of-BC"><span class="highlight">BC Parliment Buildings</span></a></li>
+                        <li><a href="Assignment1-Page3.html#overhanging-rock-gabriola-island"><span class="highlight">Gabriola Island</span></a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </section>
+        
+        <section>
+            <p><br><br>Three places I would like to go in order: </p>
+            <ol>
+                <li>New Zealand</li>
+                <li>Scotland</li>
+                <li>Italy</li>
+            </ol>
+            <p><br>Have you been to any of these places?</p>
+
+            <div class="button-container-yesOrNo">
+                <button id="yes-button">Yes</button>
+                <button id="no-button">No</button>
+            </div>
+
+            <p id="response"></p>
+
+        </section>
+        
+        <section>
+            <p><br><br>European Language Samples: </p>
+                <table class="table-audio">
+                    <tr>
+                        <th>Language</th>
+                        <th>Language Sample</th>   
+                    </tr>
+                    <tr>
+                        <td>German</td>
+                        <td>            
+                            <audio controls>
+                                <source src="Audio/language-sample-german.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>Slovenian</td>
+                        <td>
+                            <audio controls>
+                                <source src="Audio/language-sample-slovenian.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>Bosnian</td>
+                        <td>
+                            <audio controls>
+                                <source src="Audio/language-sample-bosnian.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>   
+                    </tr>                                        
+                </table>
+
+        </section>
+        
+    </main>
+
+    <script src="home.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
