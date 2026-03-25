@@ -77,8 +77,8 @@ function changeToColourScheme3() {
 }
 
 window.addEventListener("load", function() {
-    if (!sessionStorage.getItem("notification-has-been-seen")) {
-        sessionStorage.setItem("notification-has-been-seen", "true");
+    if (!sessionStorage.getItem("session-started")) {
+        sessionStorage.setItem("session-started", "true");
         changeToColourScheme1();
     } else if (sessionStorage.getItem("colourScheme") == 1) {
         changeToColourScheme1();
