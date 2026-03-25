@@ -73,12 +73,12 @@ function displayNotification() {
     document.body.appendChild(notification);
 }
 
-window.onload = function() {
+window.addEventListener("load", function() {
     if (!sessionStorage.getItem("notification-has-been-seen")) {
         sessionStorage.setItem("notification-has-been-seen", "true");
         displayNotification();
     }
-};
+});
 
 
 // Conditional
