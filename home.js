@@ -6,6 +6,7 @@ document.getElementById("reveal-vancouver-island").addEventListener('click', rev
 
 function revealVancouverIsland() {
     zoomedImage.src = "Photos/vancouver-island-map.png";
+    zoomedImage.alt = "Vancouver Island photo map with pins"
     zoomedImage.classList.remove("hidden");
     zoomedImage.style.height = "60%"
     worldMapImage.classList.add("hidden");
@@ -15,6 +16,7 @@ document.getElementById("reveal-europe").addEventListener('click', revealEurope)
 
 function revealEurope() {
     zoomedImage.src = "Photos/europe-map.png";
+    zoomedImage.alt = "Europe map photo with pins"
     zoomedImage.classList.remove("hidden");
     zoomedImage.style.height = "90%"
     worldMapImage.classList.add("hidden");
@@ -27,7 +29,9 @@ function reset() {
     worldMapImage.classList.remove("hidden");
 }
 
-// allows locations links to highlight on home page
+// allows locations links to highlight on home page ------------------------------------------------------
+
+/*
 let elements = document.getElementsByClassName("highlight");
 
 for (let i = 0; i < elements.length; i++) {
@@ -42,8 +46,9 @@ function mouseoverHandlerHighlight(event) {
 function mouseoutHandlerHighlight(event) {
     event.target.style.backgroundColor = "transparent";
 }
+*/
 
-// Notofication
+// Notofication ----------------------------------------------------------------------------------
 function displayNotification() {
     const notification = document.createElement("div");
 
@@ -55,6 +60,7 @@ function displayNotification() {
     notification.style.border = "3px solid black";
     notification.style.backgroundColor = "white";
     notification.style.padding = "50px";
+    notification.style.zIndex = 2;
 
     const closeButton = document.createElement("span");
     closeButton.innerText = "|X|";
@@ -81,7 +87,7 @@ window.addEventListener("load", function() {
 });
 
 
-// Conditional
+// Conditional ----------------------------------------------------------------------------------------
 const yes = document.getElementById("yes-button");
 const no = document.getElementById("no-button");
 const response = document.getElementById("response");

@@ -1,5 +1,7 @@
 
-// Event Handler
+// Event Handler -----------------------------------------------------------------------------------------
+
+/*
 let navElements = document.getElementsByClassName("italicize");
 
 for (let i = 0; i < navElements.length; i++) {
@@ -16,8 +18,9 @@ function mouseoutHandlerItalicize(event) {
     event.target.style.fontStyle = "normal";
     event.target.style.fontWeight = "normal";
 }
+*/
 
-// Colour Change
+// Colour Change ------------------------------------------------------------------------------------------------
 let headerColour = document.getElementsByClassName("header");
 let mainColour = document.getElementsByClassName("main");
 let navColour = document.getElementsByClassName("sidebar");
