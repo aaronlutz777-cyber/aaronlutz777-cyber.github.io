@@ -83,9 +83,9 @@ It can be closed using a clickable character "X" using an event lsitener with <s
 the respective button only once per session, again using an event listener, as well as session storage to make sure the answer is displayed correctly only once per session.
 There is an if statement that checks if the user has chosen yes or no, and adds text using .innertext with an appropriate response.
 
-Bonus: Free Hosting available @ aaronlutz777-cyber.github.io
 
 Assignment 3:
+
 
 Selector Uses:
 
@@ -111,6 +111,9 @@ o Attribute Selector
 o Pseudo-element Selector  
     > Used to make the first letter  bigger for the text in each list item of the ordered list 
         using .ordered-list li::first-letter
+
+Bonus: Free Hosting available @ aaronlutz777-cyber.github.io
+
 
 Citations:
 

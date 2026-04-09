@@ -63,6 +63,15 @@
     z-index: 0;
 }
 
+.main2, .main3 {
+    padding-top: 20px;
+    padding-left: 14px;
+    flex-grow: 1;
+    padding-bottom: 20px;
+    background-color: #78b1bf;
+    z-index: 0;
+}
+
 .body {
     margin: 0;
     background-color: black;
@@ -113,6 +122,11 @@ td {
 .portrait {
     width: 300px;
     height: auto;
+}
+
+.video-youtube {
+    height: 300px;
+    width: 533px;
 }
 
 .highlight:hover {
@@ -201,13 +215,7 @@ iframe + p, video + p {
 }
 
 @media (max-width: 600px) {
-    .flex-container {
-        display: block;
-    }
-
-    .grid-container-page2 {
-        display: block;
-    }
+    
 }
 
 
